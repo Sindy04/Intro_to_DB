@@ -14,4 +14,9 @@ def create_database(db_host,db_user,db_password,db_name):
       user=db_user
       password=db_password
     )
+      #Create cursor object
+      cursor = connection.cursor()
+    
+    #Create database query
+    query = f"CREATE DATABASE IF NOT EXISTS{db_name}"
     
