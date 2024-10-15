@@ -23,3 +23,24 @@ CREATE TABLE Books(
   Authors(author_id)
   );
 
+--Create Customers table
+CREATE TABLE Customers(
+  customer_id INT AUTO_INCREMENT,
+  customer_name VARCHAR(215) NOT NULL
+  email VARCHAR(215) UNIQUE,
+  address TEXT,
+  PRIMARY KEY (customer_id)
+  );
+
+--Create Order table
+CREATE TABLE Orders
+order_id INT AUTO_INCREMENT,
+customer_id INT,
+order_date DATE NOT NULL,
+PRIMARY KEY (order_id),
+FOREIGN KEY (customer_id) REFERENCES
+Customers(customer_id)
+);
+
+
+
