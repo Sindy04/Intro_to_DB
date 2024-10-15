@@ -6,6 +6,8 @@ DB_HOST = 'localhost'
 DB_USER = 'your_username'
 DB_PASSWORD ='your_password'
 
+CREATE DATABASE IF NOT EXISTS alx_book_store
+
 def create_database(db_host,db_user,db_password,db_name):
   try:
     #Establish database connection
