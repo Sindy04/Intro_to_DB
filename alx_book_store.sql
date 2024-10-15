@@ -1,5 +1,5 @@
 -- Database creation
-CREATE DATABASE alx_book_store;
+CREATE DATABASE alx_book_store
 
 --Use the database
 USE alx_book_store;
