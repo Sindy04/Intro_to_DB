@@ -38,8 +38,7 @@ order_id INT AUTO_INCREMENT,
 customer_id INT,
 order_date DATE NOT NULL,
 PRIMARY KEY (order_id),
-FOREIGN KEY (customer_id) REFERENCES
-Customers(customer_id)
+FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 
