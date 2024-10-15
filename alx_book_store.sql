@@ -41,5 +41,16 @@ PRIMARY KEY (order_id),
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
+--Create Order_Details table
+CREATE TABLE Order_Details(
+  orderdetailid INT AUTO_INCREMENT,
+  order_id INT,
+  book_id INT,
+  quantity DOUBLE NOT NULL,
+  PRIMARY KEY (orderdetailid),
+  FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+  FOREIGN KEY (book_id) REFERENCES Books(book_id)
+  );
+  
 
 
