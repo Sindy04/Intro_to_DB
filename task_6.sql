@@ -6,6 +6,7 @@ INSERT INTO customers(
   customer_name,
   email,
   address
+  "124 Happiness  Ave."
   )
 VALUES
 (2,'Blessing Malik','bmalik@sandtech.com','124 Happiness Ave.')
