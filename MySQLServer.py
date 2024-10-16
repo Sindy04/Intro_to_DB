@@ -29,6 +29,7 @@ cursor.execute(query)
 print(f"Database '{db_name}' created successfully!")
 
 except Error as e:
+except mysql.connector.Error"
 #Print error message
 print(f"Error creating database: {e}")
 
